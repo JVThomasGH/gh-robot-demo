@@ -40,6 +40,6 @@ Example Test Case 5
     Remove File    example.txt
 
 Example Test Case 6
-    [Documentation]    This test case verifies the existence of a non-existent file.
+    [Documentation]    This test case verifies the existence of a non-existent file..
     [Tags]    example
     File Should Not Exist    non_existent_file.txt
