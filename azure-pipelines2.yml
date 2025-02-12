@@ -25,7 +25,7 @@ jobs:
         displayName: "Install dependencies"
 
       - script: |
-          robot --outputdir reports tests/demo_tests.robot
+          robot --outputdir reports tests/demo_tests2.robot
         displayName: "Run Robot Framework tests"
 
       - task: PublishTestResults@2
