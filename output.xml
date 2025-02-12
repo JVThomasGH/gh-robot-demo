@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.13.2 on win32)" generated="20250212 15:21:28.239" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo Tests" source="D:\DEV_LOCAL\gh-robot-demo\tests\demo_tests.robot">
+<test id="s1-t1" name="Example Test Case 1">
+<kw name="Create File" library="OperatingSystem">
+<arg>example.txt</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20250212 15:21:28.285" level="INFO" html="true">Created file '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\example.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.285" endtime="20250212 15:21:28.285"/>
+</kw>
+<kw name="File Should Exist" library="OperatingSystem">
+<arg>example.txt</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<msg timestamp="20250212 15:21:28.286" level="INFO" html="true">File '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\example.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20250212 15:21:28.286" endtime="20250212 15:21:28.286"/>
+</kw>
+<kw name="Remove File" library="OperatingSystem">
+<arg>example.txt</arg>
+<doc>Removes a file with the given path.</doc>
+<msg timestamp="20250212 15:21:28.287" level="INFO" html="true">Removed file '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\example.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.286" endtime="20250212 15:21:28.287"/>
+</kw>
+<doc>This is a simple test case that checks if a file exists.</doc>
+<tag>example</tag>
+<status status="PASS" starttime="20250212 15:21:28.284" endtime="20250212 15:21:28.288"/>
+</test>
+<test id="s1-t2" name="Example Test Case 2">
+<kw name="Create Directory" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20250212 15:21:28.289" level="INFO" html="true">Created directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.289" endtime="20250212 15:21:28.289"/>
+</kw>
+<kw name="Directory Should Exist" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<msg timestamp="20250212 15:21:28.290" level="INFO" html="true">Directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20250212 15:21:28.290" endtime="20250212 15:21:28.290"/>
+</kw>
+<kw name="Remove Directory" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Removes the directory pointed to by the given ``path``.</doc>
+<msg timestamp="20250212 15:21:28.291" level="INFO" html="true">Listing contents of directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<msg timestamp="20250212 15:21:28.291" level="INFO" html="true">Directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;' is empty.</msg>
+<msg timestamp="20250212 15:21:28.291" level="INFO" html="true">Removed directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.290" endtime="20250212 15:21:28.291"/>
+</kw>
+<doc>This test case creates a directory and verifies its existence.</doc>
+<tag>example</tag>
+<status status="PASS" starttime="20250212 15:21:28.288" endtime="20250212 15:21:28.292"/>
+</test>
+<test id="s1-t3" name="Example Test Case 3">
+<kw name="Create Directory" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20250212 15:21:28.293" level="INFO" html="true">Created directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.292" endtime="20250212 15:21:28.293"/>
+</kw>
+<kw name="Remove Directory" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Removes the directory pointed to by the given ``path``.</doc>
+<msg timestamp="20250212 15:21:28.293" level="INFO" html="true">Listing contents of directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<msg timestamp="20250212 15:21:28.294" level="INFO" html="true">Directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;' is empty.</msg>
+<msg timestamp="20250212 15:21:28.294" level="INFO" html="true">Removed directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.293" endtime="20250212 15:21:28.294"/>
+</kw>
+<kw name="Directory Should Not Exist" library="OperatingSystem">
+<arg>example_dir</arg>
+<doc>Fails if the given path points to an existing file.</doc>
+<msg timestamp="20250212 15:21:28.295" level="INFO" html="true">Directory '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\example_dir"&gt;D:\DEV_LOCAL\gh-robot-demo\example_dir&lt;/a&gt;' does not exist.</msg>
+<status status="PASS" starttime="20250212 15:21:28.294" endtime="20250212 15:21:28.295"/>
+</kw>
+<doc>This test case removes a directory and verifies its removal.</doc>
+<tag>example</tag>
+<status status="PASS" starttime="20250212 15:21:28.292" endtime="20250212 15:21:28.295"/>
+</test>
+<test id="s1-t4" name="Example Test Case 5">
+<kw name="Create File" library="OperatingSystem">
+<arg>old_name.txt</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20250212 15:21:28.297" level="INFO" html="true">Created file '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\old_name.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\old_name.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.296" endtime="20250212 15:21:28.297"/>
+</kw>
+<kw name="Move File" library="OperatingSystem">
+<arg>old_name.txt</arg>
+<arg>new_name.txt</arg>
+<doc>Moves the source file into the destination.</doc>
+<msg timestamp="20250212 15:21:28.298" level="INFO" html="true">Moved file from '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\old_name.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\old_name.txt&lt;/a&gt;' to '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\new_name.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\new_name.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.297" endtime="20250212 15:21:28.298"/>
+</kw>
+<kw name="File Should Exist" library="OperatingSystem">
+<arg>new_name.txt</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<msg timestamp="20250212 15:21:28.298" level="INFO" html="true">File '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\new_name.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\new_name.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" starttime="20250212 15:21:28.298" endtime="20250212 15:21:28.298"/>
+</kw>
+<kw name="Remove File" library="OperatingSystem">
+<arg>new_name.txt</arg>
+<doc>Removes a file with the given path.</doc>
+<msg timestamp="20250212 15:21:28.299" level="INFO" html="true">Removed file '&lt;a href="file://D:\DEV_LOCAL\gh-robot-demo\new_name.txt"&gt;D:\DEV_LOCAL\gh-robot-demo\new_name.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20250212 15:21:28.299" endtime="20250212 15:21:28.299"/>
+</kw>
+<doc>This test case renames a file and verifies the new name.</doc>
+<tag>example</tag>
+<status status="PASS" starttime="20250212 15:21:28.296" endtime="20250212 15:21:28.300"/>
+</test>
+<status status="PASS" starttime="20250212 15:21:28.240" endtime="20250212 15:21:28.301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">example</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Demo Tests">Demo Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

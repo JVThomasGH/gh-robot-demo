@@ -1,0 +1,6 @@
+RobotFramework==4.0.3
+requests==2.26.0
+robotframework-seleniumlibrary==6.0.0
+robotframework-requests==0.9.1
+pymysql==1.0.2
+jsonschema==4.4.0

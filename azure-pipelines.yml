@@ -1,0 +1,35 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pr:
+  branches:
+    include:
+      - main
+
+jobs:
+  - job: RobotFrameworkTests
+    displayName: "Run Robot Framework Tests"
+    pool:
+      vmImage: "ubuntu-latest"
+    steps:
+      - task: UsePythonVersion@0
+        inputs:
+          versionSpec: "3.8"
+          addToPath: true
+
+      - script: |
+          python -m pip install --upgrade pip
+          pip install robotframework
+        displayName: "Install dependencies"
+
+      - script: |
+          robot --outputdir reports tests/
+        displayName: "Run Robot Framework tests"
+
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFiles: "reports/output.xml"
+          testRunTitle: "Robot Framework Tests"
+          mergeTestResults: true
